@@ -10030,6 +10030,7 @@ h6,
 .card_personal {
   flex-grow: 1;
   max-width: 30%;
+  min-width: 300px;
   transition: 0.3s;
   border-radius: 10px;
   overflow: hidden;
