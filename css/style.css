@@ -10034,11 +10034,13 @@ h6,
   transition: 0.3s;
   border-radius: 10px;
   overflow: hidden;
-  margin: 10px;
+  margin: 18px;
+  cursor: pointer;
 }
 
 .card_personal:hover {
   transform: scale(1.07);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .card_personal img {
@@ -10062,4 +10064,36 @@ h6,
   border-radius: 20px;
   padding: 5px;
   color: black;
+}
+
+.card_skills img {
+  width: 40px;
+  height: auto;
+}
+
+.hoverable-element {
+  position: relative; /* Required for positioning the pseudo-element */
+  /* Other styles for your element */
+}
+
+.hoverable-element::after {
+  content: 'Under Development'; /* Text to display */
+  display: flex; /* Use Flexbox to center the content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Ensure text is centered */
+  color: white; /* Text color */
+  font-size: 40px; /* Adjust as needed */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  opacity: 0; /* Start fully transparent */
+  transition: opacity 0.3s; /* Smooth transition for the opacity */
+}
+
+.hoverable-element:hover::after {
+  opacity: 1; /* Fully visible on hover */
 }
