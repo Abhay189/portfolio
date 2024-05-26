@@ -360,6 +360,21 @@
         };
     
     }
+
+    
+    window.addEventListener("scroll", checkScroll);
+    let boxes = document.querySelectorAll(".box");
+    function checkScroll(){
+        let window_height = window.innerHeight/5 * 4;
+
+        boxes.forEach(box => {
+            let box_top = box.getBoundingClientRect().top;
+            if(window_height > box_top){
+                box.classList.add("show");
+            }
+        });
+        
+    }
     
 })(jQuery);
 

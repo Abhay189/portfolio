@@ -1,0 +1,74 @@
+
+
+.skill-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 20px;
+    overflow: hidden;
+}
+
+
+.Box1{
+    --clr : rgb(171, 170, 241);
+}
+
+.Box2{
+    --clr : rgb(134, 252, 197);
+}
+.Box3{
+    --clr : pink;
+}
+.Box4{
+    --clr : brown;
+}
+.Box5{
+    --clr : rgb(252, 252, 119);
+}
+.Box6{
+    --clr : rgb(255, 89, 89);
+}
+
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--clr);
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    transform: translateX(-90%);
+    transition: .8s ease-in-out;
+    border-radius: 15px;
+    padding: 10px 0px ;
+}
+
+.box h1 {
+    color: rgb(56, 50, 50);
+    flex: 1;
+    padding: 10px 0px 10px 0px;
+}
+
+.inner-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 150px;
+    padding: 20px;
+}
+
+.box.show{
+    transform: translateX(0px);
+}
+
+
+.image-container{
+    width: 100px;
+    height: auto;
+    margin: 0px 20px;
+}
