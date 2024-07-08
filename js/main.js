@@ -47,7 +47,6 @@
         $('.btn-play').click(function () {
             $videoSrc = $(this).data("src");
         });
-        console.log($videoSrc);
 
         $('#videoModal').on('shown.bs.modal', function (e) {
             $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
@@ -375,6 +374,17 @@
         });
         
     }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const project_scroll_sections = document.querySelectorAll('.project_scroll_section');
+
+        for (let i = 0 ; i < project_scroll_sections.length ; i++){
+            project_scroll_sections[i].addEventListener('wheel', function(event) {
+                    event.preventDefault(); // Prevent default vertical scroll
+                    project_scroll_sections[i].scrollLeft += event.deltaY; // Scroll horizontally
+            });
+        }
+    });
     
 })(jQuery);
 
