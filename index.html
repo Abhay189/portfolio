@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6LVS1JE0YE"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-6LVS1JE0YE');
+    </script>
+    <meta charset="utf-8">
+    <title>Abhay Portfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./img/fevicon.png" sizes="32x32">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/style_custom.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">Abhay</span>Sharma</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#qualification" class="nav-item nav-link">Education</a>
+                <a href="#skill" class="nav-item nav-link">Skill</a>
+                <a href="#portfolio" class="nav-item nav-link">Projects</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh; position: relative; padding:0px;">
+        <canvas id="canvas" style="position: absolute; z-index: -1; width: 100%; height: 100vh;"></canvas>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/Profile_pic.jpeg" alt="">
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+                    <h1 class="display-3 text-uppercase mb-2" style="-webkit-text-stroke: 0px black; color: #e78b67 ;">Abhay Sharma</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Web Developer, Front End Developer, Back End Developer</div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="cv/Abhay_sharma_Resume_1.pdf" class="btn btn-outline-light" download="./Abhay_Sharma_Resume.pdf">Download Resume</a>
+                        <!-- <button type="button" class="btn-play" data-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Play Video</h5> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/SelfieDoodle.png" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Full Stack Software Developer</h3>
+                    <p> Hello, I'm Abhay, a versatile Full Stack Developer with a robust background in a wide array of projects, from immersive gaming applications to dynamic front-end designs and intricate back-end systems. My journey through technology has been diverse and enriching, allowing me to not just adapt but thrive in various development environments.
+                        <br>
+                        <br>
+                        At my core, I'm a seeker of depth and understanding. I have an insatiable curiosity that drives me to dig beneath the surface of every project. This persistent quest for knowledge means I strive for perfection in everything I do, investing my heart and soul into developing solutions that aren't just functional but are also innovative and efficient. My particular passion lies in algorithms; I find joy in discussing, dissecting, and developing them, constantly pushing the envelope of what's possible in coding.
+                        <br>
+                        <br>
+                        Outside the digital realm, my life is filled with melodies, movements, and sketches. Whether I'm strumming the guitar, losing myself in the rhythms of music, staying active at the gym, or bringing visions to life on paper, each of these hobbies reflects aspects of my personality: creativity, discipline, and a constant pursuit of harmony.
+
+                    </p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Abhay Sharma</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Bachelor of Comp Science</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">sabhay2001@gmail.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">Calgary, Alberta</span></h6></div>
+                        <!-- <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Available</span></h6></div> -->
+                    </div>
+                    <!-- <a href="" class="btn btn-outline-primary mr-4">Hire Me</a>
+                    <a href="" class="btn btn-outline-primary">Learn More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Knowledge</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
+            </div>
+            <div class="row align-items-center flex-column">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Education</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Bachelor In Computer Science</h5>
+                            <p class="mb-2"><strong>University of Calgary</strong> | <small>2019 - 2024</small></p>
+                            <p>As a dedicated Bachelor's student at the University of Calgary, I have cultivated a comprehensive understanding of diverse aspects within the field of computer science. My coursework spans key subjects, including Algorithms design and analysis, Data Structures, Web-Based Systems, Compiler Construction, Human-Computer Interaction, Data Base Management Systems, Computer Networks, and Principles of Operating Systems. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Expericence</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Software Engineering Intern</h5>
+                            <p class="mb-2"><strong>IBM Canada</strong> | <small>2022 - 2023</small></p>
+                            <p>My role as a Software developer intern at IBM included various responsibilities including development, testing, debugging of core components of DB2 database management system made by IBM using languges like Python, Java, Perl, and C++.</p>
+                        </div>
+                        <!-- <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Web Designer</h5>
+                            <p class="mb-2"><strong>Soft Company</strong> | <small>2000 - 2050</small></p>
+                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                        </div> -->
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">IT Customer Support Analyst</h5>
+                            <p class="mb-2"><strong>University of Calgary</strong> | <small>2021 - 2022</small></p>
+                            <p>As a Customer support analyst at the university of calgary, I was tasked with troubleshooting client's IT related problems and helping them resolve the issues through phone and email interactions.</p>
+                        </div> 
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Student Mentor</h5>
+                            <p class="mb-2"><strong>University of Calgary</strong> | <small>2021 - 2022</small></p>
+                            <p>I volunteered at the UofC Mentorship program to help new international students at the university have a smooth transitional experience. As a mentor I provided these internation students with general career, social life, work opportunity related advices.</p>
+                        </div> 
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Vice President Technical Team</h5>
+                            <p class="mb-2"><strong>University of Calgary</strong> | <small>2021 - 2022</small></p>
+                            <p>As the vice president of the technical team, my responsibilities included creating, maintaining and updating the club website with new content every other week.</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Qualification End -->
+
+
+    <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="skill-container">
+                    <div class="box Box1">
+                        <div class="inner-box"> 
+                            <div class="image-container">
+                                <img src="https://devicon-website.vercel.app/api/cplusplus/original.svg" alt="Image 1">
+                            </div>
+                            <div class="image-container">
+                                <img src="https://devicon-website.vercel.app/api/java/original.svg" alt="Image 1">
+                            </div>
+                            <div class="image-container">
+                                <img src="https://devicon-website.vercel.app/api/python/original.svg" alt="Image 1">
+                            </div>
+                            <div class="image-container">
+                                <img src="https://devicon-website.vercel.app/api/javascript/original.svg"></img>
+                            </div>
+
+
+                        </div>
+                        <h1>Languages</h1>
+            
+                    </div>
+                    <div class="box Box2">
+                        
+                        <div class="inner-box"> 
+                            <!-- <div class="image-container">
+                                <img src="https://devicon-website.vercel.app/api/perl/original.svg" alt="Image 1">
+                            </div> -->
+
+                            <div class="image-container">
+                                <img src="https://devicon-website.vercel.app/api/react/original.svg" alt="Image 1">
+                            </div>
+                            <div class="image-container">
+                                <img src="https://devicon-website.vercel.app/api/html5/original.svg" alt="Image 1">
+                            </div>
+                            <div class="image-container">
+                                <img src="https://devicon-website.vercel.app/api/css3/original.svg" alt="Image 1">
+                            </div>
+                            <div class="image-container">
+                                <img src="https://devicon-website.vercel.app/api/bootstrap/original.svg" alt="Image 1">
+                            </div>
+                        </div>
+                        <h1>Frontend</h1>
+                    </div>
+                    
+                    <div class="box Box5">
+                        <div class="inner-box"> 
+                            <div class="image-container">
+                                <img src="https://devicon-website.vercel.app/api/flask/original.svg" alt="Image 1">
+                            </div>
+                            <div class="image-container">
+                                <img src="https://devicon-website.vercel.app/api/mysql/original.svg" alt="Image 1">
+                            </div>
+                            <div class="image-container">
+                                <img src="https://devicon-website.vercel.app/api/firebase/plain.svg" alt="Image 1">
+                            </div>
+                            <div class="image-container">
+                                <img src="https://devicon-website.vercel.app/api/mongodb/original.svg"></img>
+                            </div>
+                        </div>
+                        <h1>Backend</h1>
+                    </div>
+                    <div class="box Box6">
+                        <div class="inner-box"> 
+                            <div class="image-container">
+                                <img src="https://devicon-website.vercel.app/api/docker/original.svg" alt="Image 1">
+                            </div>
+                            <div class="image-container">
+                                <img src="https://devicon-website.vercel.app/api/jenkins/original.svg" alt="Image 1">
+                            </div>
+                            <div class="image-container">
+                                <img src="https://devicon-website.vercel.app/api/kubernetes/plain.svg" alt="Image 1">
+                            </div>
+                            <div class="image-container">
+                                <img src="https://devicon-website.vercel.app/api/amazonwebservices/original-wordmark.svg"></img>
+                            </div>
+                        </div>
+                        <h1>Dev-Ops</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skill End -->
+
+
+    <!-- Portfolio Start -->
+    <div class="container-fluid pt-5 pb-3" id="portfolio">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
+            </div>
+
+            <!-- <div class="card_container">
+                <a class="card_personal" href="https://github.com/Abhay189/ScholarAI" >
+                    <div>
+                        <img src = "img/Scholair_new.png" alt="Scholair Logo">
+                    </div>
+                    <div class= "card_skills">
+                        <img src="https://devicon-website.vercel.app/api/react/original.svg" alt="Image 1">
+                        <img src="https://devicon-website.vercel.app/api/firebase/plain.svg" alt="Image 1">
+                        <img src="https://devicon-website.vercel.app/api/html5/original.svg" alt="Image 1">
+                        <img src="https://devicon-website.vercel.app/api/css3/original.svg" alt="Image 1">
+                        <img src="https://devicon-website.vercel.app/api/flask/original.svg" alt="Image 1">
+                    </div>
+                    
+                </a>
+                <a class="card_personal" href="https://github.com/Abhay189/EcoPlay">
+                    <div>
+                        <img src = "img/EcoPlay_new.png" alt="Scholair Logo">
+                    </div>
+                    <div class= "card_skills">
+                        <img src="https://devicon-website.vercel.app/api/unity/original.svg"></img>
+                        <img src="https://devicon-website.vercel.app/api/csharp/original.svg"></img>
+                        <img src="https://devicon-website.vercel.app/api/photoshop/plain.svg"></img>
+                    </div>
+                    
+                </a>
+                <a class="card_personal" href="https://github.com/30092171/481FinalProject-FlamePlanner-">
+                    <div>
+                        <img src = "img/Flame Planner logo.png" alt="Scholair Logo">
+                    </div>
+                    <div class= "card_skills">
+                        <img src="https://devicon-website.vercel.app/api/dotnetcore/original.svg"></img>
+                        <img src="https://devicon-website.vercel.app/api/csharp/original.svg"></img>
+                        <img src="https://devicon-website.vercel.app/api/mysql/original.svg"></img>
+                    </div>
+                    
+                </a>
+                <a class="card_personal" href="https://github.com/Abhay189/JStarCompiler">
+                    <div>
+                        <img src = "img/JStarCompiler logo.png" alt="Scholair Logo">
+                    </div>
+                    <div class= "card_skills">
+                        <img src="https://devicon-website.vercel.app/api/cplusplus/original.svg"></img>
+                        <div>Flex</div>
+                        <div>Bison</div>
+                        <div>Mips</div>
+                    </div>
+                    
+                </a>
+                <a class="card_personal hoverable-element" href="https://github.com/Abhay189/DimeWise">
+                    <div>
+                        <img src = "img/DimeWise.png" alt="Scholair Logo">
+                    </div>
+                    <div class= "card_skills">
+                        <img src="https://devicon-website.vercel.app/api/react/original.svg" alt="Image 1">
+                        <img src="https://devicon-website.vercel.app/api/mysql/original.svg"></img>
+                        <img src="https://devicon-website.vercel.app/api/html5/original.svg" alt="Image 1">
+                        <img src="https://devicon-website.vercel.app/api/css3/original.svg" alt="Image 1">
+                        <img src="https://devicon-website.vercel.app/api/flask/original.svg" alt="Image 1">
+                    </div>
+                    
+                </a>
+            </div> -->
+            <div class="projects_slide_section">
+                <div class="project_scroll_section isole">
+                    <img src="./img/I-Sole/Login.png" alt="ISole Login">
+                    <img src="./img/I-Sole/Signup.png" alt="ISole Login">
+                    <img src="./img/I-Sole/Console_1.png" alt="ISole Login">
+                    <img src="./img/I-Sole/Mobile_Console_2.png" alt="ISole Login">
+                    <img src="./img/I-Sole/Console_2.png" alt="ISole Login">
+                    <img src="./img/I-Sole/Mobile_Console_1.png" alt="ISole Login">
+                    <img src="./img/I-Sole/Prediction_Graph.png" alt="ISole Login">
+                    <img src="./img/I-Sole/Pressure_Graph.png" alt="ISole Login">
+                </div>
+                <div class="project_scroll_section jobPair">
+                    <img src="./img/JobPair/Signin.png" alt="ISole Login">
+                    <img src="./img/JobPair/Signup.png" alt="ISole Login">
+                    <img src="./img/JobPair/Seeker_main.png" alt="ISole Login">
+                    <img src="./img/JobPair/Seeker_mobile_main.png" alt="ISole Login">
+                    <img src="./img/JobPair/Seeker_profile_setup.png" alt="ISole Login">
+                    <img src="./img/JobPair/Seeker_mobile_profile.png" alt="ISole Login">
+                    <img src="./img/JobPair/Seeker_tracker.png" alt="ISole Login">
+                    <img src="./img/JobPair/Seeker_mobile_tracking.png" alt="ISole Login">
+                    <img src="./img/JobPair/Seeker_Interview.png" alt="ISole Login">
+                    <img src="./img/JobPair/Seeker_mobile_interview.png" alt="ISole Login">
+                    <img src="./img/JobPair/Seeker_AI_application.png" alt="ISole Login">
+                    <img src="./img/JobPair/Seeker_mobile_AI_application.png" alt="ISole Login">
+                    <img src="./img/JobPair/Seeker_profile.png" alt="ISole Login">
+                    <img src="./img/JobPair/Admin_main.png" alt="ISole Login">
+                    <img src="./img/JobPair/Admin_2.png" alt="ISole Login">
+                    <img src="./img/JobPair/Recruiter_job_creation.png" alt="ISole Login">            
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Portfolio End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/abhay--sharma/"><i class="fab fa-linkedin-in"></i></a>
+                <!-- <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a> -->
+                <a class="btn btn-light btn-social" href="https://github.com/Abhay189"><i class="fab fa-github"></i></a>
+            </div>
+            <!-- <div class="d-flex justify-content-center mb-3">
+                <a class="text-white" href="#">Privacy</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Terms</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">FAQs</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Help</a>
+            </div> -->
+            <p class="m-0 text-white" > &copy; All Rights Reserved. Designed by <strong>Abhay Sharma</strong></p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

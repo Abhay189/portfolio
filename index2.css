@@ -1,0 +1,35 @@
+
+.card_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    
+    flex-grow: 1;
+    /* min-width: 100%; */
+    max-width: 40%;
+    padding: 10px;
+    /* flex-shrink: 1; */
+}
+
+.card img {
+    width: 100%;
+}
+
+.card_skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(187, 207, 206);
+    padding: 2% 5%;
+}
+
+.card_skills div {
+    
+    padding: 10px;
+}
