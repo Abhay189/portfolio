@@ -378,10 +378,14 @@
     document.addEventListener('DOMContentLoaded', function() {
         const project_scroll_sections = document.querySelectorAll('.project_scroll_section');
 
+        let initial_scroll = 100;
         for (let i = 0 ; i < project_scroll_sections.length ; i++){
+            project_scroll_sections[i].scrollLeft += initial_scroll;
+            initial_scroll += 100;
             project_scroll_sections[i].addEventListener('wheel', function(event) {
                     event.preventDefault(); // Prevent default vertical scroll
                     project_scroll_sections[i].scrollLeft += event.deltaY; // Scroll horizontally
+                    console.log(project_scroll_sections[i].scrollLeft)
             });
         }
     });
